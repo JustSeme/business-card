@@ -11,7 +11,7 @@ import { ConfigModule } from '@nestjs/config';
       driver: ApolloDriver,
       autoSchemaFile: true,
       playground: true,
-      introspection: process.env.NODE_ENV !== 'production',
+      introspection: true,
     }),
     ConfigModule.forRoot({
       isGlobal: true,
